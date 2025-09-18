@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dance Train</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background: url('') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #f5f0dc;
+      text-align: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* dark overlay for contrast */
+      z-index: -1;
+    }
+
+    h1 {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 60px;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 60px;
+      color: #f0f0f0;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 60px;
+      justify-content: center;
+    }
+
+    .btn {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #ccc;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      color: #fff;
+    }
+
+    .btn i {
+      font-size: 60px;
+      margin-bottom: 10px;
+    }
+  </style>
+  <!-- Font Awesome for user icon -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <h1>Dance Train</h1>
+  <h2>e seu progresso nas aulas de dança</h2>
+
+  <div class="buttons">
+    <a href="criarconta.html" class="btn">
+      <i class="fas fa-user"></i>
+      CRIAR CONTA
+    </a>
+    <a href="login.html" class="btn">
+      <i class="fas fa-user"></i>
+      ENTRAR
+    </a>
+    <a href="senha.html" class="btn">
+      <i class="fas fa-user"></i>
+      REDEFINIR SENHA
+    </a>
+  </div>
+</body>
+</html>

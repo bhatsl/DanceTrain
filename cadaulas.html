@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Aulas</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+            background-color: #d1d1d1;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+        }
+
+        .form-section {
+            flex: 1;
+            padding: 50px;
+            background-color: #bfbfbf;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .form-section h1 {
+            font-size: 32px;
+            color: #666;
+            margin-bottom: 40px;
+            display: flex;
+            align-items: center;
+        }
+
+        .form-section h1::before {
+            margin-right: 10px;
+            font-size: 32px;
+        }
+
+        label {
+            margin-top: 20px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border-radius: 15px;
+            border: none;
+            outline: none;
+            margin-bottom: 10px;
+            background-color: #888888;
+            color: #fff;
+        }
+
+        .buttons {
+            margin-top: 30px;
+            display: flex;
+            gap: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            border-radius: 15px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .add-btn {
+            background-color: #f8f5e6;
+            color: #000;
+        }
+
+        .back-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #4d4d4d;
+            color: #f5f5f5;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .image-section {
+            flex: 1;
+            background-image: url("ballet.png");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h1>CADASTRO DE AULAS</h1>
+
+            <label for="data">Data da aula:</label>
+            <input type="date" id="data" name="data">
+
+            <label for="nome">Nome da aula:</label>
+            <input type="text" id="nome" name="nome" placeholder="Ex: Ballet clássico">
+
+            <label for="estilo">Estilo de dança:</label>
+            <input type="text" id="estilo" name="estilo" placeholder="Ex: Jazz, Ballet, Contemporâneo">
+
+            <label for="anotacoes">Anotações:</label>
+            <input type="text" id="anotacoes" name="anotacoes" placeholder="Escreva suas observações">
+
+            <div class="buttons">
+                <button class="add-btn">Adicionar nova aula</button>
+                <a href="inicio.html" class="back-btn">← Voltar para a página inicial</a>
+            </div>
+        </div>
+        <div class="image-section"></div>
+    </div>
+</body>
+</html>

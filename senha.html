@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redefinir Senha</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #bfbfbf;
+      display: flex;
+      height: 100vh;
+    }
+
+    .container {
+      width: 70%;
+      display: flex;
+    }
+
+    .form-section {
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .form-section h1 {
+      font-size: 2em;
+      color: #5c5c5c;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .form-section h1::before {
+      font-size: 1.5em;
+      color: #f5f1de;
+    }
+
+    .info {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+      font-size: 1.2em;
+      color: #444;
+    }
+
+    .info::before {
+      font-size: 1.5em;
+    }
+
+    .descricao {
+      margin: 10px 0 20px;
+      color: #3d2f2f;
+    }
+
+    label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+      color: #444;
+    }
+
+    input[type="email"] {
+      width: 80%;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      margin-bottom: 15px;
+      background-color: #808080;
+      color: #fff;
+    }
+
+    input::placeholder {
+      color: #ccc;
+    }
+
+    .btn {
+      padding: 10px 25px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .btn-primary {
+      background-color: #f5f1de;
+    }
+
+    .btn-secondary {
+      background-color: #6e6e6e;
+      color: #fff;
+      margin-top: 20px;
+    }
+
+    .image-section {
+      flex: 1;
+      background: url("ballet.png") no-repeat center center;
+      background-size: cover;
+      filter: grayscale(100%);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="form-section">
+      <h1>REDEFINIR SENHA</h1>
+
+      <div class="info">Problemas para iniciar sessão?</div>
+      <p class="descricao">Digite o seu e-mail para redefinir a sua senha.</p>
+
+      <form>
+        <input type="email" id="email" placeholder="Email">
+        <br>
+        <button type="submit" class="btn btn-primary">Redefinir senha</button>
+      </form>
+
+      <a href="inicio.html" class="btn btn-secondary">Voltar para a página inicial</a>
+    </div>
+
+    <div class="image-section"></div>
+  </div>
+</body>
+</html>

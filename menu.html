@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+
+    /* Lado esquerdo do menu */
+    .menu {
+      background-color: #c0c1c3; /* tom cinza */
+      color: #f9f9f0; /* cor dos textos */
+      width: 70%;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .menu-header {
+      display: flex;
+      align-items: center;
+      font-size: 26px;
+      font-weight: bold;
+      color: #6d6e71;
+    }
+
+    .menu-header span {
+      font-size: 30px;
+      margin-right: 10px;
+      color: #f9f9f0;
+    }
+
+    .menu ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 40px;
+    }
+
+    .menu ul li {
+      margin: 20px 0;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .menu ul li:hover {
+      color: #333;
+    }
+
+    .menu-footer {
+      margin-top: auto;
+    }
+
+    .back-btn {
+      display: inline-block;
+      background-color: #4d4d4d;
+      color: #f9f9f0;
+      padding: 10px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .back-btn:hover {
+      background-color: #333;
+    }
+
+    /* Lado direito da imagem */
+    .menu-image {
+      width: 30%;
+      background: url("ballet.png") no-repeat center center;
+      background-size: cover;
+    }
+
+    .menu ul li a {
+      text-decoration: none; /* tira o sublinhado */
+      color: inherit;        /* pega a cor do pai (li) */
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .menu ul li a:hover {
+      color: #333; /* muda a cor ao passar o mouse */
+    }
+  </style>
+</head>
+<body>
+  <div class="menu">
+    <div>
+      <div class="menu-header">
+        <span>☰</span> MENU
+      </div>
+      <ul>
+        <li><a href="inicio.html">Início</a></li>
+        <li><a href="cadaulas.html">Cadastro de aulas</a></li>
+        <li><a href="registroprat.html">Registro de prática</a></li>
+        <li><a href="meuprog.html">Meu progresso</a></li>
+        <li><a href="configuraçoes.html">Configurações</a></li>
+</ul>
+    </div>
+    <div class="menu-footer">
+      <a href="inicio.html" class="back-btn">← Voltar para a página inicial</a>
+    </div>
+  </div>
+
+  <div class="menu-image"></div>
+</body>
+</html>

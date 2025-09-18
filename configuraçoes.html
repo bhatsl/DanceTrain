@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configurações</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+      background-color: #d1d1d1;
+      color: #fff;
+    }
+
+    .sidebar {
+      flex: 1;
+      background-color: #b0b0b0;
+      padding: 50px 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .sidebar h1 {
+      font-size: 36px;
+      font-weight: 300;
+      margin-bottom: 50px;
+      display: flex;
+      align-items: center;
+    }
+
+    .sidebar h1::before {
+      margin-right: 15px;
+      font-size: 36px;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 20px;
+      transition: color 0.3s;
+    }
+
+    .menu a:hover {
+      color: #e0e0e0;
+    }
+
+    .back-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #7a7a7a;
+      border-radius: 20px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+      text-align: center;
+      width: fit-content;
+    }
+
+    .back-button:hover {
+      background-color: #5a5a5a;
+    }
+
+    .image-side {
+      flex: 1;
+      background: url('ballet.png') center/cover no-repeat;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <div>
+      <h1>CONFIGURAÇÕES</h1>
+      <div class="menu">
+        <a href="#">Meu Perfil</a>
+        <a href="#">Preferencias Visuais</a>
+        <a href="#">Notificações</a>
+        <a href="#">Gerenciamento de Dados</a>
+      </div>
+    </div>
+    <a href="inicio.html" class="back-button">&lt; Voltar para a página inicial</a>
+  </div>
+
+  <div class="image-side"></div>
+
+</body>
+</html>
